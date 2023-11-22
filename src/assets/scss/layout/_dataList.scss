@@ -1,0 +1,68 @@
+.usersData {
+    width: 100%;
+    border: 1px solid $white;
+    border-radius: 15px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: $blue;
+
+    &_head {
+        &__row {
+            &-item {
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    align-items: center;
+                    padding: 5px 0px;
+                    cursor: pointer;
+                    width: fit-content;
+
+                    .sort_icon {
+                        display: none;
+                        width: 15px;
+                        height: 100%;
+
+                        &.visible {
+                            display: block;
+                            transform: rotate(180deg);
+
+                            &.rotate {
+                                transform: rotate(0deg);
+                            }
+                        }
+
+                        #sort_arrow {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .search {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &_body {
+        &__row {
+            &.completed_1 {
+                background-color: $tear;
+            }
+
+            &.completed_0 {
+                background-color: $red;
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $white;
+            }
+
+            &-item {
+                padding: 5px 3px;
+            }
+        }
+    }
+}

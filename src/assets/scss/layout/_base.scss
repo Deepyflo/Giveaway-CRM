@@ -1,0 +1,129 @@
+html,
+body {
+ height: 100%;
+ min-height: 100vh;
+ position: relative;
+ background-color: $rich_black;
+ scroll-behavior: smooth;
+}
+
+body{
+  font-family: $bellota;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.1;
+  color: $copy-color;
+  overflow-x: hidden;
+  font-feature-settings: "lnum";
+  background-color: $rich_black;
+  &.hidden{
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main, header{
+  &.default{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    // @include breakpoint("sm"){
+    //   padding: 50px 0 0 0;
+    //   margin: 0 0 50px 0;
+    // }
+    &.single {
+      margin-top: 130px;
+    }
+  }
+  section{
+    display: flex;
+    width: 100%;
+    &.center{
+      justify-content: center;
+    }
+  }
+}
+
+.inner{
+  z-index: 1;
+  width: 90%;
+  max-width: $defaultSize;
+  margin: 0 $spaceLow;
+  &.full{
+    max-width: 100%;
+    margin: 0;
+  }
+  &.small{
+    max-width: $smallSize;
+  }
+}
+
+*{
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.img__bg{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hidden{
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+}
+
+.lazy {
+  opacity: 0;
+  &:not(.initial) {
+    transition: opacity .5s,
+    transform .5s ease;
+  }
+  &.initial,
+  &.loaded,
+  &.error {
+    opacity: 1;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $white;
+  border-left: solid 1px rgba($white, .1);
+  border-right: solid 1px rgba($white, .1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $gold;
+  opacity: .8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}
+
+// COLOR SELECT
+::-moz-selection {
+  color: $white;
+  background: $gold;
+}
+
+::selection {
+  color: $white;
+  background: $gold;
+}

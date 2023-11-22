@@ -1,0 +1,76 @@
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 480px) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (max-width: 768px) { @content; }
+  }
+
+  @else if $class == md {
+    @media (max-width: 992px) { @content; }
+  }
+
+  @else if $class == lgm {
+    @media (max-width: 1024px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (max-width: 1280px) { @content; }
+  }
+
+  @else if $class == xl {
+    @media (max-width: 1366px) { @content; }
+  }
+}
+
+@mixin input-styles {
+  border-radius: 5px;
+  padding: 6px 15px;
+  border: 0;
+}
+
+@mixin button-styles {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: $green;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, 0.15) 0 4px 9px;
+  box-sizing: border-box;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Inter', -apple-system, system-ui, 'Segoe UI', Helvetica, Arial,
+      sans-serif;
+  font-size: 14px;
+  font-weight: $bold;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 5px 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+
+  &:hover {
+      background-color: darken($green, 10%);
+      opacity: 1;
+      transform: translateY(0);
+      transition-duration: 0.35s;
+      box-shadow: rgba(39, 174, 96, 0.2) 0 6px 12px;
+  }
+
+  &:active {
+      transform: translateY(2px);
+      transition-duration: 0.35s;
+  }
+}

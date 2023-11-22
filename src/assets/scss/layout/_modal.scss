@@ -1,0 +1,47 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $tear;
+    color: $rich_black;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 15px;
+    gap: 20px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    text-wrap: balance;
+    text-align: center;
+
+    &__warning {
+        background-color: $gold;
+    }
+    &__info {
+        background-color: $blue;
+        color: $copy-color;
+    }
+    &__error {
+        background-color: $red;
+        color: $copy-color;
+    }
+    
+    p {
+        filter: drop-shadow(5px 5px 10px #000000);
+        font-size: 26px;
+        font-weight: $bold;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+.swal2-container {
+    height: unset !important;
+    .swal-height {
+        height: unset !important;
+    }
+}

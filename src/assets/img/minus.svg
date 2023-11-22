@@ -1,0 +1,9 @@
+<svg version="1.1" id="Calque_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800"
+	 style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<path id="minus-circle" sketch:type="MSShapeGroup" style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M400,736
+	C214.4,736,64,585.5,64,400S214.4,64,400,64s336,150.5,336,336S585.6,736,400,736L400,736z M400,0C179.1,0,0,179,0,400
+	s179.1,400,400,400s400-179,400-400S620.9,0,400,0L400,0z"/>
+<path style="fill:#FFFFFF;" d="M366.7,433.3h-100c-18.4,0-33.3-14.9-33.3-33.3s14.9-33.3,33.3-33.3h100h66.7h100
+	c18.4,0,33.3,14.9,33.3,33.3s-14.9,33.3-33.3,33.3h-100H366.7z"/>
+</svg>
