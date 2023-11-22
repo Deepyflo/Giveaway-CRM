@@ -14,6 +14,7 @@ This fictitious project simulates a giveaway with an admin page.
 - Sort & Filter per column
 - Advanced Filter
 - Filter memory
+- Encryption in DataBase
 
 
 ## Tech Stack
